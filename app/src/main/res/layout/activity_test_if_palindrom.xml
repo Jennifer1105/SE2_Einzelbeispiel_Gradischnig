@@ -8,6 +8,22 @@
     tools:context="com.example.gradi.palindrom.TestIfPalindrom">
 
     <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="message"
+        android:textSize="18sp"
+        android:typeface="monospace"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.804" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
@@ -18,7 +34,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35" />
+        app:layout_constraintVertical_bias="0.32" />
 
     <TextView
         android:id="@+id/textView"
@@ -35,7 +51,7 @@
         app:layout_constraintVertical_bias="0.141" />
 
     <EditText
-        android:id="@+id/editTextString"
+        android:id="@+id/eingabeString"
         android:layout_width="wrap_content"
         android:layout_height="49dp"
         android:ems="10"
@@ -44,7 +60,7 @@
         android:inputType="textPersonName"
         android:textAlignment="center"
         tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="254dp" />
+        tools:layout_editor_absoluteY="220dp" />
 
     <Button
         android:id="@+id/PalindromButton"
@@ -55,7 +71,7 @@
         android:text="Check String"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="375dp" />
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="307dp" />
 
 </android.support.constraint.ConstraintLayout>
