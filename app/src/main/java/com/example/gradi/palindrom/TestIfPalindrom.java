@@ -25,23 +25,25 @@ public class TestIfPalindrom extends AppCompatActivity {
             public void onClick(View v) {
                 String eingegebenerString = editString.getText().toString();
 
+                message1.setVisibility(View.INVISIBLE);
+                message2.setVisibility(View.INVISIBLE);
+                message3.setVisibility(View.INVISIBLE);
+                message4.setVisibility(View.INVISIBLE);
+
                 if(eingegebenerString.length() >= 5){
                     String space = " ";
                     if(eingegebenerString.indexOf(space) > 0){
                         message4.setVisibility(View.VISIBLE);
-                    }
-                    else{
+                    } else{
                         boolean text = isPalindrome(eingegebenerString);
 
                         if(text == true){
                             message1.setVisibility(View.VISIBLE);
-                        }
-                        else{
+                        } else{
                             message2.setVisibility(View.VISIBLE);
                         }
                     }
-                }
-                else{
+                } else{
                     message3.setVisibility(View.VISIBLE);
                 }
             }
