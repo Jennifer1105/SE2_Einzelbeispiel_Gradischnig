@@ -9,18 +9,18 @@ import android.widget.TextView;
 
 public class TestIfPalindrom extends AppCompatActivity {
 
+    TextView message1 = (TextView) findViewById(R.id.message1);
+    TextView message2 = (TextView) findViewById(R.id.message2);
+    TextView message3 = (TextView) findViewById(R.id.message3);
+    TextView message4 = (TextView) findViewById(R.id.message4);
+    EditText editString = (EditText) findViewById(R.id.editString);
+    Button palindromButton = findViewById(R.id.palindromButton);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_if_palindrom);
 
-        final TextView message1 = (TextView) findViewById(R.id.message1);
-        final TextView message2 = (TextView) findViewById(R.id.message2);
-        final TextView message3 = (TextView) findViewById(R.id.message3);
-        final TextView message4 = (TextView) findViewById(R.id.message4);
-        final EditText editString = (EditText) findViewById(R.id.editString);
-
-        Button palindromButton = findViewById(R.id.palindromButton);
         palindromButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String eingegebenerString = editString.getText().toString();
